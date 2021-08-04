@@ -277,6 +277,7 @@ body{
     display: block;
     width: 100%;
     height: 100%;
+    transition: 0.8s;
 }
 
 .port-bg , .port-content{
@@ -286,6 +287,7 @@ body{
     left: 0;
     right: 0;
     opacity: 0;
+    transition: 0.8s;
 }
 
 .port-content{
@@ -1061,6 +1063,7 @@ form input:nth-of-type(2):hover{
     width: 100%;
     height: 100%;
     opacity: 0;
+    transition: 0.7s;
 }
 
 .square-inner i{
