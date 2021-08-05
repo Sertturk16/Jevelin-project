@@ -777,15 +777,16 @@ form{
     margin-left: 0;
     margin-top: auto;
     margin-bottom: auto;
-    flex-basis: 50%;
+    flex-basis: 45%;
     flex-grow: 10;
 }
 
 form input:nth-of-type(1){
-    padding: 20px;
+    margin-left: 5%;
+    padding: 20px 20px 20px;
     border-radius: 40px;
-    width: 70%;
-    min-width: 300px;
+    width: 60%;
+    min-width: 150px;
 }
 
 form input:nth-of-type(1)::placeholder{
@@ -811,7 +812,8 @@ form input:nth-of-type(2){
     color: white;
     text-decoration: none;
     padding: 20px 40px;
-    margin-left: 50px;
+    margin-left: 25px;
+    margin-right: 50px;
 }
 
 form input:nth-of-type(1):focus{
@@ -936,7 +938,8 @@ form input:nth-of-type(2):hover{
 .d9cont{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    padding: 0 10%;
+    justify-content: space-between;
 }
 
 .d9box{
@@ -944,8 +947,8 @@ form input:nth-of-type(2):hover{
     flex-direction: column;
     text-align: left;
     flex-basis: 20%;
-    padding: 0 50px;
-    min-width: 300px;
+    min-width: 200px;
+    padding: 20px;
 }
 
 .d9box p{
@@ -954,22 +957,20 @@ form input:nth-of-type(2):hover{
 }
 
 .d90{
-    padding-bottom: 20px;
+    padding: 0 10% 20px 10%;
 }
 
 .d90 p:nth-of-type(1){
     font-family: 'Work Sans';
     font-size: 22px;
     margin-bottom: 0;
-    padding-left: 10%;
 }
 
 .d90 p:nth-of-type(2){
     font-family: 'Poppins';
     font-size: 16px;
     margin-top: 10px;
-    margin-bottom: 0;
-    padding-left: 10%;
+    margin-bottom: 30px;
 }
 
 .d91 p:nth-of-type(1){
@@ -1021,8 +1022,8 @@ form input:nth-of-type(2):hover{
 }
 
 .d94{
-    padding-left: 50px;
     padding: 0;
+    min-width: 250px;
 }
 
 .d94 p{
@@ -1038,8 +1039,8 @@ form input:nth-of-type(2):hover{
 
 .square {
     display: flex;
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
   }
   
 
@@ -1243,8 +1244,30 @@ form input:nth-of-type(2):hover{
         height: 100%;
     }
 
+    .div8-inner{
+        margin-top: 0;
+    }
+    .div8 p:nth-of-type(2){
+        margin-bottom: 0;
+    }
 
+    .square {
+        width: 60px;
+        height: 60px;
+    }
+
+    .d9cont{
+        padding: 0 5%;
+    }
+
+    .d90{
+        padding: 0 5%;
+    }
     
+    .div7-inner > p{
+        font-size: 40px;
+    }
+
 }
 
 
