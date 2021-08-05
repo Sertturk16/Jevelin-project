@@ -1099,7 +1099,7 @@ form input:nth-of-type(2):hover{
         flex-direction: column;
         position: absolute;
         background-color: #252525;
-        width: 100vw;
+        width: 100%;
         left: 0;
         top: 55px;
         transition: 1s;
