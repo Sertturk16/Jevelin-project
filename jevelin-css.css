@@ -1170,6 +1170,9 @@ form input:nth-of-type(2):hover{
 
     #search{
         width: 100%;
+        font-size: 18px;
+        font-family: 'Poppins';
+        color: rgba(255,255,255,0.9);
         background-color: #252525;
     }
 
