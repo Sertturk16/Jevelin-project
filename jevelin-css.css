@@ -60,7 +60,7 @@ body{
     text-decoration: none;
 }
 
-.navbar a:hover{
+.nav a:hover{
     color: rgb(93,66,211);
     transition: 0.5s;
 }
@@ -80,6 +80,12 @@ body{
 .navicon li{
     padding: 10px;
 }
+
+#menu-icon{
+    margin-right: 80px;
+    display: none;
+}
+
 .blank{
     height: 80px;
     width: 100%;
@@ -1078,6 +1084,143 @@ form input:nth-of-type(2):hover{
     cursor: pointer;
     opacity: 0.8;
     transition: 0.7s;
+}
+
+@media (max-width:1024px) {
+    .navbar nav{
+        display: none;
+    }
+    #menu-icon{
+        display: block;
+    }
+
+    #menu-icon:hover nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #252525;
+        width: 100vw;
+        left: 0;
+        top: 55px;
+        transition: 1s;
+    }
+
+    #menu-icon ul{
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        transition: 1s;
+    }
+    .navtext-mini li{
+        display: block;
+        padding-bottom: 20px;
+        margin: 0 50px;
+    }
+
+    .navtext-mini{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .navtext-mini a{
+        opacity: 0.7;
+    }
+    .navtext-mini a:hover{
+        opacity: 1;
+        transition: 0.7s;
+    }
+
+    .navtext-mini li:not(:nth-of-type(1)){
+        border-top: 0.5px solid rgba(255,255,255,0.3);
+    }
+
+    #menu-icon a{
+        color: rgba(255,255,255,0.9);;
+        font-family: 'Poppins';
+        font-size: 14px;
+    }
+
+    .navicon-mini{
+        display: grid !important;
+        grid-template-areas:
+        "a a"
+        "b c";
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .navicon-mini > * {
+        border: 0.5px solid rgba(255,255,255,0.3);
+    }
+
+    .navicon-mini li:not(:nth-of-type(1)){
+        display: flex;
+    }
+
+    .navicon-mini li:nth-of-type(1){
+        border:none;
+        grid-area: a;
+    }
+
+    .navicon-mini li:nth-of-type(1) > div{
+        display: flex;
+        padding: 0 50px;
+    }
+
+    #search{
+        width: 100%;
+        background-color: #252525;
+    }
+
+    #search:focus{
+        outline: none;
+    }
+
+    #searchbtn{
+        width: 100px;
+        font-size: 24px;
+        background-color: #252525;
+        color: rgba(255,255,255,0.9);;
+    }
+
+    #searchbtn:hover , #searchbtn:focus{
+        cursor: pointer;
+    }
+
+    #search::placeholder{
+        opacity: 0.7;
+        color: rgba(255,255,255,0.9);;
+        font-weight: 700;
+        font-family: 'Work Sans';
+        font-size: 24px;
+        padding-left: 10px;
+        font-style: italic;
+    }
+
+    .navicon-mini li:nth-of-type(2){
+        grid-area: b;
+    }
+
+    .navicon-mini li:nth-of-type(3){
+        grid-area: c;
+    }
+
+    .navicon-mini{
+        text-align: center;
+    }
+    .navicon-mini i{
+        padding: 30px 0;
+        color: rgba(255,255,255,0.7);
+    }
+
+    .navicon-mini a{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    
 }
 
 
