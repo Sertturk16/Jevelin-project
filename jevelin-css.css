@@ -6,8 +6,6 @@
 body > *{
     width: 100vh;
     overflow: hidden;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 :root{
     font-size: 16px;
@@ -24,7 +22,6 @@ body > *{
 
 body{
     margin: 0;
-    padding: 0;
     background-color:var(--main1);
     overflow-x: hidden;
     box-sizing: border-box;
@@ -695,7 +692,7 @@ body{
 .d6inner{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     height: 400px;
     margin: auto;
     background-color: white;
@@ -1122,6 +1119,11 @@ form input:nth-of-type(2):hover{
 }
 
 @media (max-width:1024px) {
+
+    .div0{
+        overflow: visible;
+    }
+
     .navbar nav{
         display: none;
     }
@@ -1295,13 +1297,17 @@ form input:nth-of-type(2):hover{
         font-size: 60px;
         transform: translate(-50px , 100px);
     }
-
+    .cr{
+        transform: translateX(-200px);
+    }
     .book{
         margin-bottom: 20px;
+        transform: translateX(80px);
     }
 
     .book img{
         height: 150%;
+        transform: translateX(-20px);
     }
 
     .head{
@@ -1322,14 +1328,15 @@ form input:nth-of-type(2):hover{
 
     .xx{
         width: 60%;
+        height: 150px;
     }
 
     .xx > h3{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .xx > p{
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .ports{
@@ -1340,9 +1347,15 @@ form input:nth-of-type(2):hover{
         flex-direction: column;
     }
 
+    .div4-inner{
+        gap: 70px 40px;
+    }
 
     .d4box{
         width: 500px;
+        height: 280px;
+        margin-bottom: 0;
+        margin-top: 0;
     }
     .d4box:nth-of-type(2){
         display: flex;
@@ -1362,15 +1375,17 @@ form input:nth-of-type(2):hover{
     }
 
     .btnx2 p{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     #righter p{
-        font-size: 14px;
+        font-size: 16px;
+        margin-top: 0;
     }
 
     #righter p:last-child{
-        font-size: 12px;
+        font-size: 14px;
+        padding-top: 10px;
     }
 
 
@@ -1384,9 +1399,14 @@ form input:nth-of-type(2):hover{
         justify-content: center;
     }
 
+    .no p{
+        text-align: center;
+    }
+
     .no p:nth-of-type(1){
         align-self: center;
-        font-size: 350px;
+        font-size: 400px;
+        transform: translate(-50px,-30px);
     }
 
     .div7-inner{
@@ -1412,14 +1432,148 @@ form input:nth-of-type(2):hover{
         align-self: center;
     }
 
+    .div8{
+        padding-top: 0;
+    }
+
+    .div8 p:first-child{
+        margin-top: 50px;
+    }
+
+    .div8 p:nth-child(2){
+        margin-bottom: 25px;
+    }
+
+    .div9{
+        padding-left: 50px;
+    }
+
     .d90 , .d91 , .d92 , .d93{
         width: 25%;
     }
 
     .d90{
-        margin-left: 5%;
+        margin-left: 2.5%;
+    }
+
+    .square{
+        width: 80px;
+        height: 80px;
     }
 
 }
 
+@media (max-width:600px) {
+    .creative{
+        margin-bottom: 350px;
+    }
+    .book{
+        transform: translateY(300px);
+        width: 60%;
+    }
+    .book img{
+        transform: translate(-150px, 50px);
+        height: 110%;
+    }
 
+    .head p{
+        font-size: 44px;
+    }
+
+    .xx{
+        width: 90%;
+    }
+
+    .xx p:last-child{
+        font-size: 14px;
+    }
+    
+    .card{
+        width: 185px;
+    }
+
+    .d4box{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .sbox:nth-of-type(3) , .sbox:nth-of-type(4){
+        display: none;;
+    }
+
+    form{
+        flex-direction: column;
+    }
+
+    form input:first-child{
+        width: 90%;
+        align-self: flex-start;
+    }
+
+    form input:last-child{
+        align-self: flex-start;
+        margin-top: 30px;
+    }
+
+
+}
+
+@media (max-width:550px) {
+
+    .ports{
+        columns: 1;
+        width: 60%;
+        min-width: 300px;
+    }
+
+    .sbox:nth-of-type(2){
+        display: none;
+    }
+    
+    .d94{
+        width: 70%;
+    }
+
+}
+
+@media (max-width:400px){
+    .d94{
+        width: 90%;
+    }
+}
+
+@media (max-width:360px){
+    .book{
+        height: 450px;
+        transform: translateY(350px);
+    }
+    .book img{
+        height: 130%;
+        transform: translate(-100px , 100px);
+    }
+
+    .ach p:first-child{
+        font-size: 40px;
+    }
+
+    .card{
+        width: 150px;
+    }
+
+    .d93{
+        width: 90%;
+        justify-content: space-between;
+        padding-left: 10px;
+    }
+
+    .d94{
+        width: 90%;
+        padding-left: 10px;
+    }
+
+    .div9{
+        padding-left: 0;
+    }
+
+
+}
