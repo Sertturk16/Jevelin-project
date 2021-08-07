@@ -6,6 +6,8 @@
 body > *{
     width: 100vh;
     overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 :root{
     font-size: 16px;
