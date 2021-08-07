@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body > *{
+    width: 100vh;
+    overflow: hidden;
+}
 :root{
     font-size: 16px;
     font-family:'Poppins';
@@ -269,6 +272,7 @@ body{
     border: 1px solid var(--main4);
     position: relative;
     padding-bottom: 150px;
+    overflow: visible;
 }
 
 .div3-inner{
@@ -282,7 +286,6 @@ body{
     align-self: center;
     margin-top: -200px;
     width: 80%;
-    min-width: 720px;
     max-width: 1366px;
     display: column;
     columns: 3;
@@ -405,7 +408,7 @@ body{
 
 .card{
     margin-top: 50px;
-    min-width: 200px;
+    min-width: 150px;
 }
 
 .number-cards .card p:nth-child(1){
@@ -544,10 +547,16 @@ body{
     height: 100%;
 }
 
+#lefter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 .btnx2{
     position: absolute;
-    left: 60px;
-    top: 45%;
+    
     display: flex;
 }
 
@@ -559,7 +568,7 @@ body{
     font-family: 'Work Sans';
     color: rgb(93,66,211);
     text-decoration: none;
-    padding: 18px 35px;
+    padding: 1em 2em;
 }
 
 .btnx2 a:hover{
@@ -684,7 +693,7 @@ body{
 .d6inner{
     display: flex;
     flex-direction: column;
-    width: 850px;
+    width: 100%;
     height: 400px;
     margin: auto;
     background-color: white;
@@ -744,7 +753,6 @@ body{
 }
 
 .div7-inner{
-    height: 350px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -752,10 +760,12 @@ body{
     max-width: 1920px;
     margin: auto;
     background-image: url(book.png);
-    background-position-x: 700px;
-    background-position-y: 10%;
-    background-size: 1200px;
+    background-position-x: 50vw;
+    background-position-y: 15%;
+    background-size: 130vw;
     background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .div7-inner > p{
@@ -765,7 +775,7 @@ body{
     font-size: 54px;
     color: white;
     font-family: 'Work Sans';
-    flex-basis: 27%;
+    flex-basis: 30%;
     margin-left: 5%;
     flex-grow: 1;
 }
@@ -777,7 +787,7 @@ form{
     margin-left: 0;
     margin-top: auto;
     margin-bottom: auto;
-    flex-basis: 45%;
+    flex-basis: 42%;
     flex-grow: 10;
 }
 
@@ -957,6 +967,7 @@ form input:nth-of-type(2):hover{
 }
 
 .d90{
+    width: 100%;
     padding: 0 10% 20px 10%;
 }
 
@@ -1266,6 +1277,145 @@ form input:nth-of-type(2):hover{
     
     .div7-inner > p{
         font-size: 40px;
+    }
+
+    .sponsors div:last-child{
+        display: none;
+    }
+}
+
+@media (max-width:800px) {
+    .div1{
+        padding: 0 0 0 50px;
+    }
+
+    .creative p:nth-of-type(2){
+        font-size: 60px;
+        transform: translate(-50px , 100px);
+    }
+
+    .book{
+        margin-bottom: 20px;
+    }
+
+    .book img{
+        height: 150%;
+    }
+
+    .head{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .head p:first-child{
+        text-align: center;
+        
+    }
+    .xx-container{
+        flex-direction: column;
+    }
+
+    .xx{
+        width: 60%;
+    }
+
+    .xx > h3{
+        font-size: 22px;
+    }
+
+    .xx > p{
+        font-size: 15px;
+    }
+
+    .ports{
+        columns: 2;
+    }
+    .div4 , .div5 , .div8-inner , .d9cont{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .d4box{
+        width: 500px;
+    }
+    .d4box:nth-of-type(2){
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+
+    }
+
+    #lefter{
+        width: 100%;
+        height: 33%;
+    }
+
+    #righter{
+        display: flex;
+        padding: 30px 150px 50px 150px;
+    }
+
+    .btnx2 p{
+        font-size: 14px;
+    }
+
+    #righter p{
+        font-size: 14px;
+    }
+
+    #righter p:last-child{
+        font-size: 12px;
+    }
+
+
+    #lefter img{
+        object-fit: cover;
+    }
+    
+    .d5col{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .no p:nth-of-type(1){
+        align-self: center;
+        font-size: 350px;
+    }
+
+    .div7-inner{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .div7-inner > p{
+        flex-basis: 0;
+        margin-bottom: 30px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .div7-inner > form{
+        margin-top: 0;
+        flex-basis: 1;
+    }
+
+    .d8box{
+        width: 80%;
+        align-self: center;
+    }
+
+    .d90 , .d91 , .d92 , .d93{
+        width: 25%;
+    }
+
+    .d90{
+        margin-left: 5%;
     }
 
 }
